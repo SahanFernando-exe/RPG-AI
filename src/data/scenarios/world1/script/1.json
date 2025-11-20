@@ -1,0 +1,15 @@
+{
+  "turn": 17,
+  "player_input": "I channel a blood ritual to summon a wisp.",
+  "player_action": "The player makes a blood circle and attempts the summoning ritual he learnt in the ancient book",
+  "outcome": "the risk was unsuccessful, the Backlash tears through the circle. the wisp turns hostile. the atmosphere shifts. the magic tears at the players flesh.",
+  "world_deltas": {
+    "guilds.guild_a": {
+      "opinions_of_others": "new data"
+    },
+    "characters.char_p": {
+      "opinions_of_others": "player is a psycho"}
+  },
+  "time_delta_hours": 2,
+  "references":["char_p","guild_a","item_l","loc_x"]
+}
