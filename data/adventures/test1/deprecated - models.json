@@ -1,0 +1,21 @@
+{
+    "1": {
+        "type" : "character",
+        "data" : {
+            "name" : "Albert Einstien",
+            "nicknames" : "Genius",
+            "description" : "old man",
+            "backstory" : "his past",
+            "other attributes" : "defined in character schema"
+        },
+        "relations" : [1]
+    },
+    "2": {
+        "type" : "location",
+        "data" : {
+            "name" : "Mango Valley",
+            "other names" : ""
+        },
+        "relations" : [1,3]
+    }
+}

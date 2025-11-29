@@ -1,7 +1,8 @@
 # create realiable relationship data between models.
 import json, os
 from prompts import prose_prompts as prompts
-from llm_adapter.ollama_adapter import query_llm
+from adapters.store_adapter.store_interface import ModelStoreAdapter
+from adapters.llm_adapter.ollama_adapter import query_llm
 
 class RelationService:
     def __init__(self, store_dir):
@@ -9,10 +10,7 @@ class RelationService:
         self.relations = store_dir
 
     def get_model_relations(self, model, model_id):
-        try:
-            model = 
-        prompt = prompts.instruct + prompts.author_guide + context + prompts.rules
-        output = query_llm(model = self.model, prompt = prompt)
+        relations = ModelStoreAdapter.
         return False
     
     def read(self, id):
