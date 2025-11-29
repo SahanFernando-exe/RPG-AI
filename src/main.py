@@ -1,9 +1,7 @@
-from core import data_manager, build_prompt, context_compression
-from service.ollama_client import System
 from config import MODELS
 from saves.scenarios.medieval_fantasy_prince import scenario
 from saves.adventures.medieval_fantasy_prince import adventure
-from service.PlotService import PlotService
+from services.llm_services.PlotService import PlotService
 
 
 

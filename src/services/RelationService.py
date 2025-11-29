@@ -1,12 +1,16 @@
 # create realiable relationship data between models.
+import json, os
 from prompts import prose_prompts as prompts
 from llm_adapter.ollama_adapter import query_llm
 
 class RelationService:
-    def __init__(self, model):
-        self.model = model
+    def __init__(self, store_dir):
+        self.adventure_dir = store_dir
+        self.relations = store_dir
 
-    def _model_exists(self, model_id):
+    def get_model_relations(self, model, model_id):
+        try:
+            model = 
         prompt = prompts.instruct + prompts.author_guide + context + prompts.rules
         output = query_llm(model = self.model, prompt = prompt)
         return False

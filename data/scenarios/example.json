@@ -1,5 +1,7 @@
 {
-    "schema" : {
+    "title" : "test scenario 1",
+    "description" : "scenario description",
+    "schemas" : {
         "characters" : {
             "name" : "the characters full name",
             "age" : "how old the character is"

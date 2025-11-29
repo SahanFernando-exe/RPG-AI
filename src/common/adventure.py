@@ -1,1 +1,0 @@
-# Source for creating and managing adventures.

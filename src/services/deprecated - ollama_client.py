@@ -2,8 +2,8 @@ import requests, json
 from config import OLLAMA_URL
 import secrets
 from config import MODELS as AI_DICT
-from service import narrate_prompts
-from service import outline_prompts
+from services.llm_services import narrate_prompts
+from services.llm_services import outline_prompts
 
 class System:
     def __init__(self, scenario, adventure):
