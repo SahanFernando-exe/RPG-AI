@@ -11,9 +11,6 @@ class System:
         self.ADVENTURE = adventure
         print(self.SCENARIO.tone)
 
-    def save():
-        raise NotImplementedError()
-
     def query_ollama(model, prompt, **params):
         payload = {"model": model, "prompt": prompt} | params
         r = requests.post(f"{OLLAMA_URL}/api/generate", json=payload, stream=True)
@@ -23,17 +20,6 @@ class System:
                 data = json.loads(line)
                 output += data.get("response", "")
         return output.strip()
-    
-
-    def world_gen(self):
-        raise NotImplementedError()
-
-
-    def create_data(data_model, prompt):
-        output = System.query_ollama(model = AI_DICT['describe'], prompt=prompt)
-        output = System.query_ollama(model = AI_DICT['json'], prompt=prompt)
-        #check json matches data_model else throw err
-        raise NotImplementedError()
 
 
     def plot_outline(self, context):
@@ -47,11 +33,3 @@ class System:
         prompt = narrate_prompts.instruct + narrate_prompts.style_guide + narrate_prompts.context + """--- Plot ---\n""" + plot + narrate_prompts.rules
         output = System.query_ollama(model = AI_DICT['narration'], prompt = prompt)
         return output
-
-
-    def pre_plot_context(self):
-        raise NotImplementedError()
-
-
-    def post_plot_context(self):
-        raise NotImplementedError()

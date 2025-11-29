@@ -1,0 +1,1 @@
+# Generate starting data for a new adventure.

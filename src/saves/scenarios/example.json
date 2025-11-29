@@ -1,0 +1,13 @@
+{
+    "schema" : {
+        "characters" : {
+            "name" : "the characters full name",
+            "age" : "how old the character is"
+        },
+        "locations" : {
+            "name" : "the locations name",
+            "aliases" : "other names of the location",
+            "description" : "what is the location like"
+        }
+    }
+} 

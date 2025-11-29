@@ -1,0 +1,7 @@
+{
+  "1": {
+    "model" : "Character2",
+    "relation_to" : "Location3",
+    "relation" : "birthplace"
+  }
+}
