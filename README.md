@@ -1,5 +1,6 @@
 # World-AI Narrative Engine
-A stateful AI-driven storytelling engine combining LLM creativity with a persistent world model.  
+A stateful AI-driven storytelling engine combining LLM creativity with a persistent world model. 
+Traditional LLM-driven storytelling systems rely entirely on the model’s short-term context window, which leads to inconsistent characters, forgotten details, unpredictable world logic and unfriendly pacing.
 World-AI generates dynamic stories while maintaining consistency through structured world data, dynamic context management, a turn-based diff engine, and extendable multilayered LLM pipelines.
 
 
