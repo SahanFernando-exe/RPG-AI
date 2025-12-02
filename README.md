@@ -22,8 +22,8 @@ This allows for highly dynamic world creation catered specifically for an author
 - Each turn records:
   - generated plot and narration
   - world diff from the previous state
-- player actions are actually not directly saved to a turn, instead it is turned into a narrative plot and rewritten to heighten the narrative immersion.
-- world state diff allows for dynamic world state dynamism at low computational overhead.
+- Player actions are actually not directly saved to a turn. They are turned into narrative plot and rewritten by the narrative engine to heighten the narrative immersion by maintaining prose consistency.
+- World state diff allows for dynamic world state dynamism at low computational overhead.
 - Bookmarkable turns to allows for multibranching stories while allowing for cleanup of unnecessary branches.
 
 ### Dynamic Context Manager
