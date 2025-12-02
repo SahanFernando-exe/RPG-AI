@@ -1,6 +1,6 @@
 # World-AI Narrative Engine
 A stateful AI-driven storytelling engine combining LLM creativity with a persistent world model.  
-World-AI generates dynamic stories while maintaining consistency through structured world data, a turn-based diff engine, and an orchestrated LLM pipeline.
+World-AI generates dynamic stories while maintaining consistency through structured world data, dynamic context management, a turn-based diff engine, and extendable multilayered LLM pipelines.
 
 
 ## Features
@@ -54,26 +54,7 @@ Example flow:
 - Ollama (local LLM backend)
 - DeepDiff (state diffing)
 - Custom adapters for model IO and storage
-
-## Project Structure
-```
-src/
-  service/
-    plot_service.py
-    narrator_service.py
-    turn_service.py
-    context_resolver/
-  models/
-    world_state.py
-    character.py
-    location.py
-    relations.py
-  llm_adapter/
-    ollama_client.py
-  storage/
-    adventure_repository.py
-main.py
-```
+- TinyDB json style local save file management
 
 
 ## Roadmap
